@@ -1,0 +1,95 @@
+{
+  "social": {
+    "linkedIn": "www.linkedin.com/in/waldemar-bus/",
+    "email": "waldek.bus@gmail.com",
+    "github": "github.com/Kedlawv"
+  },
+  "personal": {
+    "first-name": "Waldemar",
+    "last-name": "Buś",
+    "por": "36-001 Trzebownisko",
+    "phone": "886 530 054"
+  },
+  "experience": [
+    {
+      "start-date": "02/2009",
+      "end-date": "08/2018",
+      "company": "Fosco Hayes Hurdley",
+      "location": "Birmingham UK",
+      "title": "Senior Operator",
+      "responsibilities": [
+        "Operating Digital Printing Press HP FB7600",
+        "Organising Production",
+        "Maintenance of the machine",
+        "Repairs"
+      ]
+    },
+    {
+      "start-date": "10/2008",
+      "end-date": "04/2009",
+      "company": "Diamond Exhibitions",
+      "location": "Birmingham UK",
+      "title": "Graphics Department Operative",
+      "responsibilities": [
+        "Preparing , manufacturing and installing graphical elements on exhibition installations"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "start-date": "03/2019",
+      "end-date": "12/2019",
+      "inst-name": "Software Development Academy",
+      "title": "Java from scratch",
+      "description": "360h of workshop based study Java 8 | TDD | GIT | SQL | HTML | CSS JDBC | Hibernate | JSP | Spring"
+    },
+    {
+      "start-date": "03/2018",
+      "end-date": "2018",
+      "inst-name": "Codecademy.com",
+      "title": "Computer Science Career Path Pro Course",
+      "description": "Python | Data Structures | Sort Algorithms | Search Algorithms"
+    },
+    {
+      "start-date": "09/2002",
+      "end-date": "06/2004",
+      "inst-name": "Non Public Business School in Mielec",
+      "title": "IT Technician with specialisation in\nComputer Graphics",
+      "description": ""
+    }
+  ],
+  "technical-skills": [
+    "Java8",
+    "Spring",
+    "GIT",
+    "Maven",
+    "IntelliJ IDEA",
+    "HTML/CSS",
+    "JavaScript",
+    "SQL"
+  ],
+  "soft-skills": [
+    "Hardworking",
+    "Organised",
+    "Disciplined",
+    "Friendly",
+    "Creative",
+    "Driven",
+    "Proactive",
+    "Cooperative",
+    "Analitical",
+    "Dependable",
+    "Committed",
+    "Persistent"
+  ],
+  "languages": [
+    "English B2"
+  ],
+  "personal-interests": [
+    "Computer Programming",
+    "3D Printing",
+    "3D Modelling",
+    "Virtual Reality",
+    "Sci Fi Media"
+  ]
+}
