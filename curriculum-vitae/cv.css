@@ -1,3 +1,7 @@
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
 div.table {
     display: table;
     width: 1024px;
@@ -10,17 +14,33 @@ div.tableRow {
 
 div.tableCell {
     display: table-cell;
-    width: auto;
+    width: 35%;
     height: 100px;
     background-color: grey;
     padding: 10px;
     margin: 10px;
 }
 
-div#social-title {
+div.left {
+    width: 15%;
+}
+
+div#social-title, div#personal-title {
     width: 15%;
 }
 
 div.tableCell:nth-child(even) {
     background-color: beige;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h2{
+    font-weight: normal;
+    letter-spacing: 0.2em;
+}
+li.strong{
+    font-weight: bold ;
 }
