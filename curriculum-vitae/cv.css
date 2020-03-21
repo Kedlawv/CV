@@ -1,0 +1,26 @@
+div.table {
+    display: table;
+    width: 1024px;
+    margin: auto;
+}
+
+div.tableRow {
+    display: table-row;
+}
+
+div.tableCell {
+    display: table-cell;
+    width: auto;
+    height: 100px;
+    background-color: grey;
+    padding: 10px;
+    margin: 10px;
+}
+
+div#social-title {
+    width: 15%;
+}
+
+div.tableCell:nth-child(even) {
+    background-color: beige;
+}
