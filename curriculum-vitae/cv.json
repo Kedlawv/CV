@@ -58,7 +58,7 @@
       "description": ""
     }
   ],
-  "technical-skills": [
+  "technical_skills": [
     "Java8",
     "Spring",
     "GIT",
@@ -68,7 +68,7 @@
     "JavaScript",
     "SQL"
   ],
-  "soft-skills": [
+  "soft_skills": [
     "Hardworking",
     "Organised",
     "Disciplined",

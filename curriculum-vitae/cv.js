@@ -20,12 +20,16 @@ function populate(json) {
     const personal = document.getElementById("personal");
     const exp = document.getElementById("exp");
     const edu = document.getElementById("edu");
+    const tech = document.getElementById("tech");
+    const soft = document.getElementById("soft");
 
-    //
+
     populateFromObject(json.social, socialTitle, social);
     populateFromObject(json.personal, personalTitle, personal);
-    populateFromArrayOfObjects(json.experience, exp)
-    populateFromArrayOfObjects(json.education, edu)
+    populateFromArrayOfObjects(json.experience, exp);
+    populateFromArrayOfObjects(json.education, edu);
+    populateFromArray(json.technical_skills, tech);
+    populateFromArray(json.soft_skills,soft);
 
 }
 
@@ -54,7 +58,6 @@ function populateFromArrayOfObjects(json, right) {
         const ulRight = document.createElement("ul");
         let li = undefined;
         for (const prop in json[i]) {
-
             if (prop === "start-date") {
                 li = document.createElement("li");
                 li.setAttribute("id", "date");
@@ -62,9 +65,9 @@ function populateFromArrayOfObjects(json, right) {
                 continue;
             } else if (prop === "end-date") {
                 li.innerHTML += " - ";
-            }else if(prop === "company" || prop === "inst-name"){
+            } else if (prop === "company" || prop === "inst-name") {
                 li = document.createElement("li");
-                li.setAttribute("class","strong");
+                li.setAttribute("class", "strong");
             } else {
                 li = document.createElement("li");
             }
@@ -74,6 +77,32 @@ function populateFromArrayOfObjects(json, right) {
         right.appendChild(ulRight);
         right.innerHTML += "<hr>";
 
+    }
+}
+
+function populateFromArray(json, right) {
+    right.innerHTML += "<hr>";
+    console.log(json);
+    let ul = undefined;
+    let ulDiv = undefined;
+    let counter = 3;
+    for (const prop in json) {
+        if (counter === 3) {
+            ulDiv = document.createElement("div");
+            ulDiv.setAttribute("class","ulDiv");
+            ul = document.createElement("ul");
+            ul.setAttribute("class", "bulleted");
+            ulDiv.appendChild(ul);
+        }
+
+        const li = document.createElement("li");
+        li.innerHTML = json[prop];
+        ul.appendChild(li);
+        counter--;
+        if (counter === 0) {
+            right.appendChild(ulDiv);
+            counter = 3;
+        }
     }
 }
 

@@ -1,5 +1,9 @@
-body{
+body {
     font-family: 'Nunito', sans-serif;
+}
+
+div#header{
+    letter-spacing: 0.4em;
 }
 
 div.table {
@@ -15,10 +19,12 @@ div.tableRow {
 div.tableCell {
     display: table-cell;
     width: 35%;
-    height: 100px;
     background-color: grey;
     padding: 10px;
-    margin: 10px;
+}
+
+div.tableCell:nth-child(even) {
+    background-color: beige;
 }
 
 div.left {
@@ -27,20 +33,36 @@ div.left {
 
 div#social-title, div#personal-title {
     width: 15%;
+    text-align: right;
 }
 
-div.tableCell:nth-child(even) {
-    background-color: beige;
+div#social, div#personal {
+    text-align: left;
+
 }
 
-ul{
+div#tech-skills {
+    height: 50px;
+}
+
+div.ulDiv {
+    display: inline-block;
+}
+
+ul {
     list-style-type: none;
 }
 
-h2{
-    font-weight: normal;
-    letter-spacing: 0.2em;
+ul.bulleted {
+    list-style-type: square;
+
 }
-li.strong{
-    font-weight: bold ;
+
+li.strong {
+    font-weight: bold;
+}
+
+p.title {
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
 }
