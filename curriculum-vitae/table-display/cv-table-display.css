@@ -1,0 +1,68 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+div#header{
+    letter-spacing: 0.4em;
+}
+
+div.table {
+    display: table;
+    width: 1024px;
+    margin: auto;
+}
+
+div.tableRow {
+    display: table-row;
+}
+
+div.tableCell {
+    display: table-cell;
+    width: 35%;
+    background-color: grey;
+    padding: 10px;
+}
+
+div.tableCell:nth-child(even) {
+    background-color: beige;
+}
+
+div.left {
+    width: 15%;
+}
+
+div#social-title, div#personal-title {
+    width: 15%;
+    text-align: right;
+}
+
+div#social, div#personal {
+    text-align: left;
+
+}
+
+div#tech-skills {
+    height: 50px;
+}
+
+div.ulDiv {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul.bulleted {
+    list-style-type: square;
+
+}
+
+li.strong {
+    font-weight: bold;
+}
+
+p.title {
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+}

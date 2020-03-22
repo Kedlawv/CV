@@ -52,7 +52,6 @@ function populateFromObject(json, left, right) {
 }
 
 function populateFromArrayOfObjects(json, right) {
-    right.innerHTML += "<hr>";
 
     for (let i = 0; i < json.length; i++) { //job object
         const ulRight = document.createElement("ul");
@@ -75,13 +74,11 @@ function populateFromArrayOfObjects(json, right) {
             ulRight.appendChild(li);
         }
         right.appendChild(ulRight);
-        right.innerHTML += "<hr>";
 
     }
 }
 
 function populateFromArray(json, right) {
-    right.innerHTML += "<hr>";
     console.log(json);
     let ul = undefined;
     let ulDiv = undefined;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Test Lines</title>
+    <script src = "../cv.js"></script>
+    <script>
+        window.onload = init;
+    </script>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        
+        #canvas {
+            width: 70%;
+            margin: auto;
+            /*-webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);*/
+            /*-moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);*/
+            /*box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);*/
+        }
+        
+        .grid-container > div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .title {
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        
+        .content {
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        
+        #social-title {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        #social {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: left;
+        }
+        
+        #personal-title {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        #personal {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            text-align: left;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul.bulleted {
+            list-style-type: square;
+    
+        }
+
+        li.strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas">
+        <div class="grid-container">
+            <div class="header">Waldemar Buś</div>
+            <div id="social-title"></div>
+            <div id="social"></div>
+            <div id="personal-title"></div>
+            <div id="personal"></div>
+            <div class="title" id="exp-title">1</div>
+            <div class="content" id="exp">2</div>
+            <div class="title" id="edu-title">3</div>
+            <div class="content" id="edu">4</div>
+            <div class="title" id="tech-title">5</div>
+            <div class="content" id="tech">6</div>
+            <div class="title" id="soft-title">7</div>
+            <div class="content" id="soft">8</div>
+        </div>
+    </div>
+
+</body>
+</html>

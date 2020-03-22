@@ -6,47 +6,21 @@ div#header{
     letter-spacing: 0.4em;
 }
 
-div.table {
-    display: table;
-    width: 1024px;
-    margin: auto;
-}
+.header{grid-area: header;}
+.title{grid-area: title;}
+.content{grid-area: content;}
+.footer{grid-area: footer;}
 
-div.tableRow {
-    display: table-row;
-}
-
-div.tableCell {
-    display: table-cell;
-    width: 35%;
-    background-color: grey;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
     padding: 10px;
 }
 
+
 div.tableCell:nth-child(even) {
     background-color: beige;
-}
-
-div.left {
-    width: 15%;
-}
-
-div#social-title, div#personal-title {
-    width: 15%;
-    text-align: right;
-}
-
-div#social, div#personal {
-    text-align: left;
-
-}
-
-div#tech-skills {
-    height: 50px;
-}
-
-div.ulDiv {
-    display: inline-block;
 }
 
 ul {
