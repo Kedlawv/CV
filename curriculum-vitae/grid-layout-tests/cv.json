@@ -1,14 +1,13 @@
 {
   "social": {
-    "linkedIn": "www.linkedin.com/in/waldemar-bus/",
+    "LinkedIn": "www.linkedin.com/in/waldemar-bus/",
     "email": "waldek.bus@gmail.com",
-    "github": "github.com/Kedlawv"
+    "Github": "github.com/Kedlawv"
   },
   "personal": {
-    "first-name": "Waldemar",
-    "last-name": "Buś",
-    "por": "36-001 Trzebownisko",
-    "phone": "886 530 054"
+    "Name": "Waldemar Buś",
+    "POR": "36-001 Trzebownisko",
+    "Phone": "886 530 054"
   },
   "experience": [
     {
