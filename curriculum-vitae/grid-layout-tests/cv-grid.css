@@ -1,3 +1,38 @@
+@media only screen and (max-width: 1200px) {
+    .grid-container {
+        display: block;
+    }
+    div.do-not-display{
+        display:none;
+    }
+
+    ul{
+        padding-left: 15px;
+        list-style-position: inside;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    #canvas {
+        width: 1200px;
+        margin: auto;
+        -webkit-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+        grid-gap: 0px;
+    }
+
+    ul {
+        float: left;
+
+    }
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     font-size: 1.4em;
@@ -7,19 +42,17 @@ p {
     margin-top: 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
-    grid-gap: 0px;
-    background-color: white;
-}
+/*#canvas {*/
+/*    width: 70%;*/
+/*    margin: auto;*/
+/*    -webkit-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);*/
+/*    -moz-box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);*/
+/*    box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.75);*/
+/*}*/
 
-#canvas {
-    width: 70%;
-    margin: auto;
-    -webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.75);
+
+.grid-container {
+    background-color: white;
 }
 
 .grid-container > div {
@@ -32,6 +65,7 @@ p {
     grid-column-end: 4;
     font-size: 1.5em;
     letter-spacing: 0.4em;
+    float: top;
 }
 
 .content {
@@ -46,20 +80,22 @@ div.header {
     background-color: firebrick;
 }
 
-#h-n-t{
+#h-n-t {
     width: 92%;
-    margin:auto;
+    margin: auto;
 }
-#h-name{
+
+#h-name {
     font-size: 2em;
     letter-spacing: 0.2em;
     color: white;
 }
-#h-title{
+
+#h-title {
     letter-spacing: 0.43em;
 }
 
-div.thick-black-line{
+div.thick-black-line {
     grid-column-start: 1;
     grid-column-end: 8;
     height: 10px;
@@ -67,7 +103,7 @@ div.thick-black-line{
     padding: 3px;
 }
 
-div.thin-black-line{
+div.thin-black-line {
     grid-column-start: 1;
     grid-column-end: 8;
     height: 5px;
@@ -75,11 +111,12 @@ div.thin-black-line{
     padding: 0px;
     margin-bottom: 15px;
 }
-div.footer{
+
+div.footer {
     grid-column-start: 1;
     grid-column-end: 8;
     background-color: firebrick;
-    height:30px;
+    height: 30px;
 }
 
 #social-title {
@@ -107,7 +144,6 @@ div.footer{
 }
 
 ul {
-    float: left;
     list-style-type: square;
     margin-top: 0;
     margin-bottom: 0;
